@@ -1,0 +1,13 @@
+import requests , json
+
+end_url = "https://jsonplaceholder.typicode.com/todos"
+todo = {"userId": 1, "title": "Buy milk", "completed": False} #dictionary item 
+
+#The Basic Syntax For POST is :  requests.post(url, params={key: value}, args) hence, 
+print(response.content) #OR response.json()
+
+#print(response) gives status code only
+print(response.status_code)
+
+
+
