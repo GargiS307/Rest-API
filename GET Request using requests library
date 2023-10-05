@@ -1,0 +1,23 @@
+#api written in python
+
+import requests 
+'''
+give the endpoint url from where you need to retreive data
+just for testing purposes, I am using  url : https://jsonplaceholder.typicode.com/todos/1
+this a free url that can be used for testing 
+I will suggest to visit "https://jsonplaceholder.typicode.com/"
+'''
+api_url = "https://jsonplaceholder.typicode.com/todos/1" #you can put your own url
+response = requests.get(api_url)
+
+#to view the output
+response.json()
+
+#if you want to see the status code 
+print(response.status_code)
+#view the response’s HTTP headers with response.headers. This dictionary contains metadata about the response, such as the Content-Type of the response.
+response.headers["CContent-Type"]
+#'application/json; charset=utf-8'
+
+
+
