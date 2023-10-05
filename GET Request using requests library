@@ -12,7 +12,11 @@ api_url = "https://jsonplaceholder.typicode.com/todos/1" #you can put your own u
 response = requests.get(api_url)
 
 #to view the output
-response.json()
+response.json() #OR
+print(response.content)
+#if you want to show the url of src endpoint
+print(response.url)
+
 
 #if you want to see the status code 
 print(response.status_code)
