@@ -1,8 +1,8 @@
 import requests, json
 
-api_response = requests.get("https://jsonplaceholder.typicode.com/todos/1")
-print(api_response.status_code)
-data = api_response.text
-parse_json = json.loads(data)
+response = requests.get("https://jsonplaceholder.typicode.com/todos/1")
+print(response.status_code)
+data = response.text
+json_response = json.loads(data)
 
-print("Todos/1: ", parse_json)
+print("Todos/1: ", json_response)
