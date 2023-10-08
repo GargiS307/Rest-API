@@ -1,4 +1,4 @@
-import requests , json
+import requests # ,json
 
 end_url = "https://jsonplaceholder.typicode.com/todos"
 todo = {"userId": 1, "title": "Buy milk", "completed": False} #dictionary item 
