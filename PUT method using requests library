@@ -1,0 +1,9 @@
+import requests
+
+response= requests.put('url/put', data={key:value})
+
+#to put status code
+print(response)
+
+#to put response
+print(response.content)
