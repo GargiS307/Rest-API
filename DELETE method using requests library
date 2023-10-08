@@ -1,0 +1,10 @@
+import requests
+
+#using delete method of requests library
+response = requests.delete('url/delete', data={key:value})
+
+#to show status code
+print(response)
+
+#to show msg
+print(response)
