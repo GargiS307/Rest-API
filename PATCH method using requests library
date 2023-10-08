@@ -1,0 +1,10 @@
+import requests
+
+#using patch function of requests library
+response = requests.patch('url/patch', data={key:value}) 
+
+#prints status code 200 if successful
+print(response)
+
+#to print response
+print(response.content)
