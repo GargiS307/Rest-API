@@ -1,0 +1,14 @@
+import requests 
+
+# Creating a response using requests' function head 
+response = requests.head('url', data ={'key':'value'}) 
+
+# check status code for response received 
+# success code - 200 
+print(response) 
+
+# print headers of request 
+print(response.headers) 
+
+# checking if request contains any content 
+print(response.content) 
